@@ -1,0 +1,63 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "redirects": [],
+    "headers" : [
+      {
+        "source": "**/*",
+        "headers" : [
+          {"key":"Content-Security-Policy","value":"default-src 'self' https: data:; script-src 'self'; style-src 'self' 'unsafe-inline' data:; base-uri 'none'"},
+          { "key" : "Access-Control-Allow-Origin", "value" : "*" },
+          { "key" : "X-Content-Type-Options", "value" : "nosniff" },
+          { "key" : "X-Frame-Options", "value" : "deny" },
+          { "key" : "X-XSS-Protection", "value" : "1; mode=block" },
+          { "key": "Referrer-Policy", "value": "no-referrer-when-downgrade" },
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      },
+      {
+        "source": "/**/*.html",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" }
+        ]
+      },
+      {
+        "source": "/favicon.ico",
+        "headers": [
+          { "key": "Cache-Control", "value": "max-age=31536000" }
+        ]
+      },
+      {
+        "source": "service-worker.js",
+        "headers": [
+          { "key": "Cache-Control", "value": "max-age=0" }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|js.map|txt|woff|woff2)",
+        "headers": [
+          { "key": "Cache-Control", "value": "max-age=604800" }
+        ]
+      }
+    ]
+  },
+  "emulators": {
+    "auth": {
+      "port": 9099
+    },
+    "hosting": {
+      "port": 3001
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}
