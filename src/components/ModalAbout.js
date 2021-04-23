@@ -44,7 +44,7 @@ export const ModalAbout = forwardRef((props, ref) => {
                 Informations:
               </ModalHeading>
               <ModalFieldset>
-                <p>L&apos;application de démonstation utilise la bibliothèque React17 dans sa version la plus récente.</p>
+                <p>L&apos;application de démonstration utilise la bibliothèque React17 dans sa version la plus récente.</p>
                 <p>Axée sur l&apos;expérience utilisateur, elle est imparfaite car c&apos;est mon premier cas d&apos;études de ses fonctionnalités.</p>
                 <p>Les objectifs étant de réaliser des cas pratiques d&apos;utilisations en production.</p>
                 <p>A terme l&apos;application pourra éliminer une dette technique encore en excès.</p>

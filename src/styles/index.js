@@ -3,7 +3,8 @@ import { lightTheme, darkTheme } from './theme'
 
 import {
   HomeStyles,
-  SectionFound
+  SectionFound,
+  SectionTags,
 } from './home/home-styles'
 
 import {
@@ -107,6 +108,7 @@ export {
   // home
   HomeStyles,
   SectionFound,
+  SectionTags,
   // nav-styles
   HeaderNav,
   TitleNav,

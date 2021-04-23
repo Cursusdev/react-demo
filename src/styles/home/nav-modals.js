@@ -16,7 +16,6 @@ export const ModalBackdrop = styled.div`
 `
 
 export const ModalWrapper = styled.div`
-  // position: fixed;
   overflow: hidden;
   background: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
@@ -42,6 +41,7 @@ export const ModalWrapper = styled.div`
   @media ${device.mobileL} {
     overflow-y: scroll;
     width: 95vw;
+    height: 90vh;
   }
 `
 

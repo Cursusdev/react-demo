@@ -3,6 +3,10 @@ import { TagCloud } from 'react-tagcloud'
 
 import { useTheme } from '../hooks/useTheme'
 
+import {
+  SectionTags,
+} from '../styles/index'
+
 const data = [
   { value: 'jQuery', count: 25 },
   { value: 'MongoDB', count: 18 },
@@ -89,8 +93,6 @@ const data = [
 ]
 
 
-
-
 export const SimpleCloud = () => {
   // methods of functionalities
   const [theme, ] = useTheme()
@@ -107,14 +109,16 @@ export const SimpleCloud = () => {
   }
 
   return (
-    <TagCloud
-      className='tag-cloud'
-      minSize={15}
-      maxSize={45}
-      // colorOptions={options}
-      tags={data}
-      randomNumberGenerator={random}
-      style={{ width: '90%', margin: '20% auto', textAlign: 'center', letterSpacing: '3px', lineHeight: '55px' }}
-    />
+    <SectionTags>
+      <TagCloud
+        className='tag-cloud'
+        minSize={15}
+        maxSize={45}
+        // colorOptions={options}
+        tags={data}
+        randomNumberGenerator={random}
+        style={{ width: '90%', margin: '20% auto', textAlign: 'center', letterSpacing: '3px', lineHeight: '55px' }}
+      />
+    </SectionTags>
   )
 }

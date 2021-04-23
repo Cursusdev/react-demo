@@ -33,9 +33,6 @@ export const ModalAuthWrapper = styled.div`
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   text-align: justify;
-  &.modal-change {
-
-  }
   &.modal-cgu {
     overflow-y: scroll;
     width: 70vw;
@@ -47,25 +44,26 @@ export const ModalAuthWrapper = styled.div`
   }
   @media ${device.tablet} {
     &.modal-change {
-      margin-top: 200px;
       width: 75vw;
+      margin-top: 200px;
     }
     &.modal-cgu {
       overflow-y: scroll;
       width: 70vw;
-      margin-top: 40px;
       height: 90vh;
+      margin-top: 40px;
     }
     &.modal-update {
-      margin-top: 10em;
+      margin-top: 8em;
     }
     &.modal-delete {
-      margin-top: 10em;
+      margin-top: 8em;
     }
   }
   @media ${device.mobileL} {
     &.modal-change {
       width: 95vw;
+      margin-top: 50px;
     }
     &.modal-cgu {
       width: 95vw;

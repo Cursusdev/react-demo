@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+import {
+  device,
+} from '../index'
 
 export const HomeStyles = styled.main`
   position: relative;
@@ -21,5 +24,10 @@ export const SectionFound = styled.section`
     text-decoration: underline;
     text-decoration-color: ${({ theme }) => theme.link};
     letter-spacing: 1.5px;
+  }
+`
+export const SectionTags = styled.section`
+  @media ${device.tablet} {
+    overflow: scroll;
   }
 `

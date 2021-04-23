@@ -47,7 +47,7 @@ export const Navigation = ({
           {usercontext => (
             <HeaderNav>
               <Logo />
-              <TitleNav>React demo &apos;&apos;Coquille vide&apos;&apos;</TitleNav>
+              <TitleNav>React demo App</TitleNav>
               <div className="toogle-theme">
                 <ToggleTheme
                   selected={selected}

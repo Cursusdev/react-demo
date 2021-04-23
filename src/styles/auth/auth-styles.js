@@ -194,6 +194,7 @@ export const FormAuth = styled.form`
     }
   }
   @media ${device.mobileL} {
+    
     .titleForm {
       max-width: 90vw;
     }

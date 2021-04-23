@@ -15,7 +15,7 @@ export const darkTheme = {
   text:  '#FFFDFF',     // ghostWhite
   link:  '#5cabff',     // light blue
   color: '#800080',     // purple
-  nav:   '#E2ADF4',     // light fuchsia
+  nav:   '#E2ADF4',     // light fuchia
   hover: '#0000FF',     // blue
   primary: '#0000FF',   // blue
   secondary: '#5cabff', // light blue
